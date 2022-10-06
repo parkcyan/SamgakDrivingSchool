@@ -29,3 +29,27 @@
 	text-shadow: 2px 2px white;
 	text-shadow: none;
 }
+
+
+/* expense */
+
+#expense-container table {
+	width: 1000px;
+	height: 225px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#expense-container table tr:first-child {
+	background-color: #dddddd;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+}
+
+#expense-container table, #expense-container tr, #expense-container td {
+	border: 1px solid #cccccc;
+}
+
+#expense-container table tr td {
+	vertical-align: middle;
+}
