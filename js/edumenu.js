@@ -5,7 +5,9 @@ $(document).ready(function() {
 	})
 	
 	$("#header-edumenu").mouseleave(function() {
-		$("#header-edumenu").css("top", "30px");
+		setTimeout(function(){
+			$("#header-edumenu").css("top", "30px");
+		}, 1000)
 	})
 	
 });

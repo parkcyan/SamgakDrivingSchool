@@ -53,3 +53,12 @@
     padding: 3px 30px;
     border-radius: 7px;
 }
+
+.processimg {
+	width: 600px;
+	height: 360px;
+}
+
+.processlicense {
+	width: 600px;
+}

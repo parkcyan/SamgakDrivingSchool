@@ -89,6 +89,7 @@ header {
 #logo {
 	width: 350px;
 	height: 60px;
+	filter: drop-shadow(2px 4px 6px gray);
 }
 
 header ul {

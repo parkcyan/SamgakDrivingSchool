@@ -9,6 +9,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-transition: background-image 0.5s linear;
+    transition: background-image 0.5s linear;
 }
 
 #main-container {
@@ -21,6 +23,10 @@
 	font-size: 40px;
 	text-align: left;
 	text-shadow: 2px 2px black;
+}
+
+#main-leftdiv p {
+	opacity: 0%;
 }
 
 #main-leftdiv p:last-child {
@@ -37,6 +43,7 @@
 #main-rightdiv {
 	font-size: 25px;
 	text-align: center;
+	filter: drop-shadow(2px 4px 6px black);
 }
 
 .main-rightdivitem {
@@ -103,10 +110,12 @@
 	width: 250px;
 	height: 100px;
 	align-items: center;
+	filter: brightness(100%) drop-shadow(2px 4px 6px black);
 }
 
 #main2-rightdiv div img{
 	width: 100px;
+	
 }
 
 #main2-rightdiv div:first-child {
