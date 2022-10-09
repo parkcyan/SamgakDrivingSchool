@@ -73,6 +73,7 @@
 	border: 3px solid #000;
 	border-radius: 8px;
 	align-items: center;
+	filter: drop-shadow(2px 4px 2px gray);
 }
 
 #main2-bottomdiv {

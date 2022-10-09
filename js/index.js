@@ -62,12 +62,37 @@ $(document).ready(function() {
 		location.href = 'shuttle.html'
 	})
 	
+	$(".main2-topdivitem").hover(function() {
+		$(this).css("background-color", "black");
+		$(this).css("color", "white");
+		$(this).children('img').css("filter", "invert(100%)");
+		$(this).css("cursor", "pointer");
+	}, function() {
+		$(this).css("background-color", "transparent");
+		$(this).css("color", "black");
+		$(this).children('img').css("filter", "none");
+		$(this).css("cursor", "auto");
+	})
+	
+	$("#main2-topdivitem1").click(function() {
+		location.href = 'expense.html'
+	})
+	
+	$("#main2-topdivitem2").click(function() {
+		location.href = 'course.html'
+	})
+	
+	$("#main2-topdivitem3").click(function() {
+		alert("서비스 점검중입니다.");
+		//location.href = '.html'
+	})
+	
 	$("#main2-rightdiv div").hover(function(){
 		$(this).css("filter", "brightness(85%) drop-shadow(2px 4px 6px black)");
 		$(this).css("cursor", "pointer");
 	}, function() {
 		$(this).css("filter", "brightness(100%) drop-shadow(2px 4px 6px black)");
-		$(this).css("cursor", "pointer");
+		$(this).css("cursor", "auto");
 	})
 	
 	$("#main2-rightdiv div").click(function() {
