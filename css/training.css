@@ -36,3 +36,11 @@
 	width: 600px;
 	height: 360px;
 }
+
+@media (max-width: 1024px) {
+	
+	#main-container {
+		width: 90%;
+	}
+		
+}

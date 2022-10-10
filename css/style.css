@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @import "./common.css";
 
+body::after{
+    position:absolute; 
+    width:0; 
+    height:0; 
+    overflow:hidden; 
+    z-index:-99;
+    
+    content:url(images/index1.webp) url(images/index2.webp) url(images/index3.webp); 
+    /* 필요한 이미지 소스들 미리 다운하는 곳, 처음 페이지 방문시 어색하게 이미지 전환이 되는걸 방지 */
+}
+
 /* main */
 
 #mainarticle {
@@ -142,4 +153,45 @@
 
 #main2-rightdiv div:last-child img{
 	width: 70px;
+}
+
+@media (max-width: 1024px) {
+	
+	#main-container, #main2-container {
+		width: 90%;
+	}
+	
+	#main-leftdiv p {
+		font-size: 35px;
+	}
+	
+	#main-leftdiv p:last-child {
+		font-size: 40px;
+	}
+	
+	#main2-bottomdiv {
+		display: block;
+	}
+	
+	#main2-leftdiv, #main2-rightdiv {
+		width: 100%;
+		height: fit-content;
+	}
+	
+	#main2-leftdiv table {
+		width: 100%;
+	}
+	
+	#main2-rightdiv {
+		margin-top: 25px;
+	}
+	
+	#main2-rightdiv div {
+		width: 24%;
+	}
+	
+	footer {
+		margin-top: 30px;
+	}
+	
 }

@@ -32,25 +32,44 @@
 
 /* shuttle */
 
-#shuttle-container table {
-	width: 1000px;
-	height: 225px;
+#login-container {
+	width: 400px;
+	border: 1px solid #666;
+}
+
+#loginform {
+	flex-direction: column;
+}
+
+#loginform table {
+	width: 330px;
+	height: 100px;
 	text-align: center;
-	border-collapse: collapse;
+	font-size: 15px;
 }
 
-#shuttle-container table tr:first-child {
-	background-color: #dddddd;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
-}
-
-#shuttle-container table, #shuttle-container tr, #shuttle-container td {
-	border: 1px solid #cccccc;
-}
-
-#shuttle-container table tr td {
+#loginform table tr td {
 	vertical-align: middle;
+}
+
+#loginform table input {
+	width: 250px;
+	border: 0;
+	border-bottom: 1px solid #666;
+}
+
+#loginform table input:focus {
+	outline: none;
+	border-bottom: 2px solid #666;
+}
+
+#loginform button {
+	width: 330px;
+    height: 30px;
+    border: none;
+    background-color: #0067a3;
+    color: white;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1024px) {

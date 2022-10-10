@@ -12,7 +12,7 @@
 }
 
 html { 
-	font-size: 18px; 
+	font-size: 100%; 
 	text-align: center;
 	scroll-behavior: smooth;
 } 	
@@ -97,7 +97,7 @@ header ul {
 }
 
 header ul img {
-	width: 30px;
+	width: 25px;
 }
 
 #header-edumenu {
@@ -142,4 +142,12 @@ footer img {
 #footer-container div {
 	flex-direction: column;
 	text-align: left;
+}
+
+@media (max-width: 1024px) {
+	
+	#header-container, #footer-container, .container {
+		width: 90%;
+	}
+		
 }

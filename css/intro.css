@@ -37,9 +37,6 @@
     font-size: 15px;
 }
 
-#introduce-container {
-	width: 1200px;
-}
 
 #introduce-topdiv, #introduce-bottomdiv {
 	text-align: left;
@@ -72,4 +69,12 @@
 	color: #fff;
 	margin: 5px 0;
 	padding: 0 5px;
+}
+
+@media (max-width: 1024px) {
+	
+	#main-container {
+		width: 90%;
+	}
+		
 }

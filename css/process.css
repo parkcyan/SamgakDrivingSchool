@@ -42,12 +42,6 @@
 
 /* process */
 
-#process-container {
-	width: 1200px;
-	text-align: left;
-	font-size: 15px;
-}
-
 #process-container ul li {
 	border: 2px solid #0067a3;
     padding: 3px 30px;
@@ -61,4 +55,12 @@
 
 .processlicense {
 	width: 600px;
+}
+
+@media (max-width: 1024px) {
+	
+	#main-container {
+		width: 90%;
+	}
+		
 }
