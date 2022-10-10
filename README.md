@@ -1,6 +1,7 @@
 # SamgakDrivingSchool
 
 삼각운전전문학원 홈페이지
+- 첫화면
 1. index.html // 첫화면
 (공지사항 게시판, 카톡 라인 등의 안내 버튼은 미구현됨)
 
