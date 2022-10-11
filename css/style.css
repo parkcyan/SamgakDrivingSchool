@@ -8,7 +8,7 @@ body::after{
     overflow:hidden; 
     z-index:-99;
     
-    content:url(images/index1.webp) url(images/index2.webp) url(images/index3.webp); 
+    content:url(../images/index1.webp) url(../images/index2.webp) url(../images/index3.webp); 
     /* 필요한 이미지 소스들 미리 다운하는 곳, 처음 페이지 방문시 어색하게 이미지 전환이 되는걸 방지 */
 }
 
