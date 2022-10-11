@@ -28,6 +28,16 @@ $(document).ready(function() {
 	let mainarticleimg = 0;
 	let url = window.location.href.replace('/index.html', '') + '/images/';
 	
+	function preload(imagesArray) {
+		let n = imagesArray.length;
+		for (let i = 0; i < n; i++) {
+			let img = new Image();
+			img.src = imagesArray[i];
+		}
+	}
+	
+	preload([url + "index2.webp", url + "index3.webp"]);
+	
 	setInterval(function() {
 		if (mainarticleimg == 0) {
 			$("#mainarticle").css("background-image", "url(" + url + "index2.webp");
