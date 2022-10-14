@@ -25,15 +25,15 @@ body::after{
 }
 
 #main-container {
-	width: 1200px;
 	color: #fff;	
 	justify-content: space-between;
 }
 
 #main-leftdiv {
-	font-size: 40px;
+	font-size: 2.5rem;
 	text-align: left;
 	text-shadow: 2px 2px black;
+	flex-direction: column;
 }
 
 #main-leftdiv p {
@@ -41,7 +41,7 @@ body::after{
 }
 
 #main-leftdiv p:last-child {
-	font-size: 50px;
+	font-size: 3rem;
 }
 
 #main-leftdiv p:last-child span {
@@ -52,15 +52,15 @@ body::after{
 }
 
 #main-rightdiv {
-	font-size: 25px;
+	font-size: 1.3rem;
 	text-align: center;
 	filter: drop-shadow(2px 4px 6px black);
 }
 
 .main-rightdivitem {
-	width: 300px;
+	width: 100%;
 	height: 140px;
-	margin: 15px;
+	margin: 15px 0;
 	border: 3px solid #fff;
 	border-radius: 15px;
 	display: flex;
@@ -74,12 +74,7 @@ body::after{
     width: 100%;
 }
 
-#main2-container {
-	width: 1200px;
-}
-
 #main2-topdiv div {
-	width: 150px;
 	color: #000;
 	border: 3px solid #000;
 	border-radius: 8px;
@@ -88,17 +83,22 @@ body::after{
 }
 
 #main2-bottomdiv {
-	height: 300px;
 	align-items: center;
 }
 
+/*
 #main2-leftdiv, #main2-rightdiv {
-	width: 600px;
-	height: 250px;
 }
+
 
 #main2-leftdiv table {
 	width: 600px;	
+}
+*/
+
+#main2-leftdiv {
+	display: flex;
+    flex-direction: column;
 }
 
 #main2-leftdiv table td:first-child {
@@ -119,15 +119,13 @@ body::after{
 }
 
 #main2-rightdiv div {
-	width: 250px;
-	height: 100px;
+	margin: 20px 0;
 	align-items: center;
 	filter: brightness(100%) drop-shadow(2px 4px 6px black);
 }
 
 #main2-rightdiv div img{
 	width: 100px;
-	
 }
 
 #main2-rightdiv div:first-child {
@@ -146,7 +144,6 @@ body::after{
 }
 
 #main2-rightdiv div:last-child {
-	font-size: 15px;
 	background-color: #0067a3;
 	color: #fff;
 }
@@ -157,41 +154,70 @@ body::after{
 
 @media (max-width: 1024px) {
 	
-	#main-container, #main2-container {
-		width: 90%;
+	#main2-rightdiv div img{
+		width: 6vw;
 	}
 	
-	#main-leftdiv p {
-		font-size: 35px;
+	#main2-rightdiv div:last-child img{
+		width: 6vw;
+	}
+	
+	#main2-rightdiv {
+		font-size: 1.4vw;
+	}
+	
+}
+
+
+@media (max-width: 768px) {
+	
+	#main-leftdiv {
+		font-size: 4vw;
 	}
 	
 	#main-leftdiv p:last-child {
-		font-size: 40px;
+		font-size: 4.8vw;
 	}
 	
-	#main2-bottomdiv {
-		display: block;
+	#main-rightdiv {
+		font-size: 2vw;
+	}
+	
+	#main-rightdiv img {
+		width: 5vw;
+	}
+	
+	.main-rightdivitem {
+		height: 15vh;
+	}
+	
+	#main2-topdiv img{
+		width: 5vw;
 	}
 	
 	#main2-leftdiv, #main2-rightdiv {
 		width: 100%;
-		height: fit-content;
-	}
-	
-	#main2-leftdiv table {
-		width: 100%;
 	}
 	
 	#main2-rightdiv {
-		margin-top: 25px;
+		margin-top: 10px;
 	}
 	
 	#main2-rightdiv div {
-		width: 24%;
+		margin: 10px 0;
+		font-size: 1.8vw;
+		height: 10vh;
 	}
 	
-	footer {
-		margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+	
+	#main-rightdiv {
+		display: none;
 	}
 	
+	#main2-topdiv {
+		font-size: 2.5vw;
+	}
 }

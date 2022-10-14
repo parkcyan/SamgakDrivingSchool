@@ -5,21 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>삼각운전전문학원</title>
 		<link href="images/favicon.png" rel="shortcut icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header class="flexc">
-			<div id="header-container" class="container flexa">
-				<a href="index.html" id="logolink"><img src="images/logo.webp" id="logo" alt="logo"/></a>
-				<nav>
+		<header>
+			<div class="container">
+				<div id="header-container" class="row flexa">
+					<a href="index.html" id="logolink" class="col-6 flexa"><img src="images/logo.webp" id="logo" alt="logo"/></a>
+					<nav class="col-6">
 					<ul class="flexe">
 						<li class="flexa"><a href="intro.html">학원소개</a></li>
 						<li class="flexa" id="edu"><a href="process.html">교육안내</a></li>
 						<li class="flexa"><a href="shuttle.html">셔틀운행</a></li>
 						<li class="flexa"><a href="login.html" class="flexc"><img src="images/login.png" alt="login" /></a></li>
 					</ul>
-				</nav>
-			</div>			
+					</nav>
+				</div>			
+			</div>
 		</header>
 		<div id="header-edumenu" class="flexc">
 			<nav>
@@ -34,57 +37,59 @@
 		</div>
 		<section>
 			<article id="mainarticle" class="flexc">
-				<div id="main-container" class="flexa">
-					<div id="main-leftdiv">
-						<p id="main-leftdivp1">야갼, 주말반 운영중</p>
-						<p id="main-leftdivp2">당일교육, 당일시험 가능!</p>	
-						<p id="main-leftdivp3">광주권 전지역 셔틀버스 운행중</p>
-						<p id="main-leftdivp4">면허, 도로연수는 <span>삼각운전전문학원!</span></p>
-					</div>
-					<div id="main-rightdiv">
-						<div id="main-rightdivitem1" class="main-rightdivitem">
-							<div>
-								<img src="images/school.png" alt="school" />
-								<img src="images/mapsearch.png" alt="mapsearch" />
-							</div>
-							<p>학원소개, 오시는길</p>
+				<div id="main-container" class="container">
+					<div class="row">
+						<div id="main-leftdiv" class="col-9 flexc">
+							<p id="main-leftdivp1">야갼, 주말반 운영중</p>
+							<p id="main-leftdivp2">당일교육, 당일시험 가능!</p>	
+							<p id="main-leftdivp3">광주권 전지역 셔틀버스 운행중</p>
+							<p id="main-leftdivp4">면허, 도로연수는 <span>삼각운전전문학원!</span></p>
 						</div>
-						<div id="main-rightdivitem2" class="main-rightdivitem">
-							<div>
-								<img src="images/card.png" alt="" />
-								<img src="images/car.png" alt="" />
-								<img src="images/shuttle.png" alt="" />
+						<div id="main-rightdiv" class="col-3">
+							<div id="main-rightdivitem1" class="main-rightdivitem">
+								<div>
+									<img src="images/school.png" alt="school" />
+									<img src="images/mapsearch.png" alt="mapsearch" />
+								</div>
+								<p>학원소개, 오시는길</p>
 							</div>
-							<p>1종, 2종, 대형 교육과정</p>
-						</div>
-						<div id="main-rightdivitem3" class="main-rightdivitem">
-							<div>
-								<img src="images/shuttle.png" alt="" />
-								<img src="images/road.png" alt="" />
+							<div id="main-rightdivitem2" class="main-rightdivitem">
+								<div>
+									<img src="images/card.png" alt="" />
+									<img src="images/car.png" alt="" />
+									<img src="images/shuttle.png" alt="" />
+								</div>
+								<p>1종, 2종, 대형 교육과정</p>
 							</div>
-							<p>셔틀버스 운행 안내</p>
+							<div id="main-rightdivitem3" class="main-rightdivitem">
+								<div>
+									<img src="images/shuttle.png" alt="" />
+									<img src="images/road.png" alt="" />
+								</div>
+								<p>셔틀버스 운행 안내</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</article>
 			<article id="main2article" class="flexc"> 
-				<div id="main2-container"> 
-					<div id="main2-topdiv" class="flexe mt20">
-						<div id="main2-topdivitem1" class="flexe main2-topdivitem">
+				<div id="main2-container" class="container"> 
+					<div id="main2-topdiv" class="flexe mt20 row">
+						<div id="main2-topdivitem1" class="flexe col-3 main2-topdivitem">
 							<img src="images/cash.png" alt="cash" />
 							<p>수강료 안내</p>
 						</div>
-						<div id="main2-topdivitem2" class="flexe main2-topdivitem">
+						<div id="main2-topdivitem2" class="flexe col-3 main2-topdivitem">
 							<img src="images/youtube.png" alt="courseyoutube" />
 							<p>코스 동영상</p>
 						</div>
-						<div id="main2-topdivitem3" class="flexe main2-topdivitem">
+						<div id="main2-topdivitem3" class="flexe col-3 main2-topdivitem">
 							<img src="images/question.png" alt="question" />
 							<p>상담 / 문의</p>
 						</div>
 					</div>
-					<div id="main2-bottomdiv" class="flexe mt20">
-						<div id="main2-leftdiv">
+					<div id="main2-bottomdiv" class="flexe mt20 row">
+						<div id="main2-leftdiv" class="col-6">
 							<div class="flexb">
 								<p>○ 공지사항</p>
 								<p><a href="" class="notitest">▶ 더보기</a></p>
@@ -113,29 +118,29 @@
 								</tr>
 							</table>
 						</div>
-						<div id="main2-rightdiv" class="flexe">
-							<div class="flexe">
+						<div id="main2-rightdiv" class="flexe col-6">
+							<div class="flexe col-5">
 								<img src="images/kakao.png" alt="kakao" />
 								<p>
 								1:1 오픈채팅으로<br>
 								간편한 상담!
 								</p>
 							</div>
-							<div class="flexe">
+							<div class="flexe col-5">
 								<img src="images/youtube-color.png" alt="youtube" />
 								<p>
 								유튜브 공식채널<br>
 								시험 꿀팁제공!
 								</p>
 							</div>
-							<div class="flexe">
+							<div class="flexe col-5">
 								<img src="images/navertalktalk.png" alt="navertalktalk" />
 								<p>
 								빠르고 편리한<br>
 								네이버 톡톡상담!
 								</p>
 							</div>
-							<div class="flexe">
+							<div class="flexe col-5">
 								<img src="images/phone.png" alt="phone" />
 								<p>
 								전화 상담<br>
@@ -147,19 +152,22 @@
 				</div>
 			</article>
 		</section>
-		<footer class="flexc">
-			<div id="footer-container" class="flexb">
-				<div class="flexc">
-					<img src="images/footerlogo.webp" alt="footerlogo" />
-				</div>
-				<div class="flexc">
-					<p>삼각운전전문학원 | 대표전화 : 1577-1577 | 사업자 등록번호 : 212-99-451872</p>
-					<p>주소 : 광주광역시 북구 설죽로 404번길 2 | 대표자 : 박정원</p>
-					<p>Copyright(c) 2022 All rights reserved.</p>
+		<footer class="flexc mt30">
+			<div id="footer-container" class="container">
+				<div class="row">
+					<div class="flexa col-6">
+						<img src="images/footerlogo.webp" alt="footerlogo" />
+					</div>
+					<div class="col-6">
+						<p>삼각운전전문학원 | 대표전화 : 1577-1577 | 사업자 등록번호 : 212-99-451872</p>
+						<p>주소 : 광주광역시 북구 설죽로 404번길 2 | 대표자 : 박정원</p>
+						<p>Copyright(c) 2022 All rights reserved.</p>
+					</div>
 				</div>
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 		<script src="js/edumenu.js"></script>
 		<script src="js/index.js"></script>
 	</body>
