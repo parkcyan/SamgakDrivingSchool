@@ -220,4 +220,8 @@ body::after{
 	#main2-topdiv {
 		font-size: 2.5vw;
 	}
+	
+	#main2-leftdiv {
+		font-size: 2vw;
+	}
 }
