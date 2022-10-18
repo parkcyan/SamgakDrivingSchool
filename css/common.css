@@ -106,11 +106,52 @@ header ul img {
 	height: 50px;
 }
 
+/* toparticle */
+
+#toparticle {
+    width: 100%;
+    background-image: url(../images/index2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#top-container {
+	height: 120px;
+	color: #fff;	
+}
+
+#toparticle p {
+	font-size: 50px;
+	text-align: left;
+	text-shadow: 2px 2px black;
+}
+
+#toparticle p span {
+	background-color: #000;
+	color: yellow; 
+	text-shadow: 2px 2px white;
+	text-shadow: none;
+}
+
+/* mainarticle */
+
+#mainarticle {
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
 /* footer */
 
 footer {
 	width: 100%;
 	background-color: #424242;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
 }
 
 footer img {
@@ -133,10 +174,26 @@ footer img {
 	justify-content: flex-start;
 }
 
+@media (max-width: 1024px) {
+	
+	#toparticle p {
+		font-size: 4vw;
+	}	
+}
+
 @media (max-width: 768px) {
 	
 	#logo {
 		width: 100%;
+	}
+	
+	#top-container {
+		height: 12vh;	
+	}
+	
+	#mainarticle img {
+		width: 90%;
+		height: auto;
 	}
 	
 	footer img {
@@ -148,8 +205,20 @@ footer img {
 
 @media (max-width: 500px) {
 	
+	.title {
+		font-size: 3.5vw;
+	}
+	
 	header ul {
 		font-size: 3vw;
+	}
+	
+	#toparticle p {
+		font-size: 6vw;
+	}
+	
+	#mainarticle {
+    	font-size: 2.5vw;
 	}
 	
 	#footer-container div {

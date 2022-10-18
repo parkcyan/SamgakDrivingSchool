@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+	var footerHeight = $("footer").css("height");
+	
+	$("#gotop").css("bottom", footerHeight);
 	
 	$(".processindex").hover(function() {
 		$(this).css("background-color", "#0067a3");

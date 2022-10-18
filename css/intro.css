@@ -1,50 +1,7 @@
 @charset "UTF-8";
 @import "./common.css";
 
-/* main */
-
-#mainarticle {
-    width: 100%;
-    background-image: url(../images/index2.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#main-container {
-	width: 1200px;
-	height: 120px;
-	color: #fff;	
-}
-
-#mainarticle p {
-	font-size: 50px;
-	text-align: left;
-	text-shadow: 2px 2px black;
-}
-
-#mainarticle p span {
-	background-color: #000;
-	color: yellow; 
-	text-shadow: 2px 2px white;
-	text-shadow: none;
-}
-
 /* introduce */
-
-#introducearticle {
-    width: 100%;
-    font-size: 15px;
-}
-
-
-#introduce-topdiv, #introduce-bottomdiv {
-	text-align: left;
-}
-
-#introduce-bottomdiv-left {
-	width: 500px;
-}
 
 #introduce-bottomdiv-left p {
 	width: fit-content;
@@ -71,10 +28,30 @@
 	padding: 0 5px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	
-	#main-container {
-		width: 90%;
+	#introduce-bottomdiv div {
+    	display: block;
+	}
+	
+	#daumRoughmapContainer1664941648070 {
+		margin-top: 20px;
+	}
+		
+}
+
+@media (max-width: 500px) {
+	
+	#introducearticle {
+    	font-size: 2.5vw;
+	}
+	
+	#daumRoughmapContainer1664941648070 {
+		width: 100% !important;
+	}
+	
+	#daumRoughmapContainer1664941648070 .wrap_map {
+		height: 40vh !important;
 	}
 		
 }

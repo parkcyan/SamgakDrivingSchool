@@ -1,43 +1,13 @@
 @charset "UTF-8";
 @import "./common.css";
 
-/* main */
-
-#mainarticle {
-    width: 100%;
-    background-image: url(../images/index.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#main-container {
-	width: 1200px;
-	height: 120px;
-	color: #fff;	
-}
-
-#mainarticle p {
-	font-size: 50px;
-	text-align: left;
-	text-shadow: 2px 2px black;
-}
-
-#mainarticle p span {
-	background-color: #000;
-	color: yellow; 
-	text-shadow: 2px 2px white;
-	text-shadow: none;
-}
-
 #gotop {
 	position: fixed;
     width: 50px;
     height: 50px;
     right: 100px;
-    bottom: 120px;
     background-color: #cccccc;
-    font-size: 15px;
+    text-align: center;
 }
 
 /* process */
@@ -57,10 +27,36 @@
 	width: 600px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	
-	#main-container {
+	#gotop {
+		right: 10px;
+	}
+	
+	#process-container ul {
+		display: block;
+	}
+	
+	.processimg {
+		width: 90%;
+		height: auto;
+	}
+	
+	.processlicense {
 		width: 90%;
 	}
 		
+}
+
+@media (max-width: 500px) {
+	
+	#gotop {
+		width: 40px;
+		height: 40px;
+	}
+	
+	#processarticle {
+		font-size: 2.5vw;
+	}
+
 }
