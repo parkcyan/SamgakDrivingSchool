@@ -40,13 +40,13 @@ $(document).ready(function() {
 	
 	setInterval(function() {
 		if (mainarticleimg == 0) {
-			$("#mainarticle").css("background-image", "url(" + url + "index2.webp");
+			$("#indextoparticle").css("background-image", "url(" + url + "index2.webp");
 			mainarticleimg++;
 		} else if (mainarticleimg == 1) {
-			$("#mainarticle").css("background-image", "url(" + url + "index3.webp");
+			$("#indextoparticle").css("background-image", "url(" + url + "index3.webp");
 			mainarticleimg++;
 		} else if (mainarticleimg == 2) {
-			$("#mainarticle").css("background-image", "url(" + url + "index.webp");
+			$("#indextoparticle").css("background-image", "url(" + url + "index.webp");
 			mainarticleimg++;
 		}
 		if (mainarticleimg == 3) mainarticleimg = 0;

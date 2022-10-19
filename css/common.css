@@ -203,7 +203,7 @@ footer img {
 	
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
 	
 	.title {
 		font-size: 3.5vw;

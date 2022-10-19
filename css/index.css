@@ -14,7 +14,7 @@ body::after{
 
 /* main */
 
-#mainarticle {
+#indextoparticle {
     width: 100%;
     background-image: url(../images/index.webp);
     background-position: center;
@@ -86,16 +86,6 @@ body::after{
 	align-items: center;
 }
 
-/*
-#main2-leftdiv, #main2-rightdiv {
-}
-
-
-#main2-leftdiv table {
-	width: 600px;	
-}
-*/
-
 #main2-leftdiv {
 	display: flex;
     flex-direction: column;
@@ -154,11 +144,7 @@ body::after{
 
 @media (max-width: 1024px) {
 	
-	#main2-rightdiv div img{
-		width: 6vw;
-	}
-	
-	#main2-rightdiv div:last-child img{
+	#main2-rightdiv div img, #main2-rightdiv div:last-child img{
 		width: 6vw;
 	}
 	
@@ -211,7 +197,7 @@ body::after{
 	
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
 	
 	#main-rightdiv {
 		display: none;
@@ -222,6 +208,15 @@ body::after{
 	}
 	
 	#main2-leftdiv {
-		font-size: 2vw;
+		font-size: 2.5vw;
 	}
+	
+	#main2-rightdiv div img, #main2-rightdiv div:last-child img{
+		width: 10vw;
+	}
+	
+	#main2-rightdiv div {
+		font-size: 2.5vw;
+	}
+	
 }
