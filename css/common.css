@@ -25,6 +25,10 @@ body {
 	letter-spacing: 0px;	
 }
 
+a:hover {
+	color: inherit;
+}
+
 .flexc {
 	display: flex;
 	justify-content: center;
