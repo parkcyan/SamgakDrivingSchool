@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	
+	const call = "01049230191";
+	
 	$(".notitest").click(function(e) {
 		e.preventDefault();
 		alert("서비스 점검중입니다.");
@@ -105,8 +107,20 @@ $(document).ready(function() {
 		$(this).css("cursor", "auto");
 	})
 	
-	$("#main2-rightdiv div").click(function() {
+	$("#main2-rightdivitem1").click(function() {
 		alert("서비스 점검중입니다.");
+	})
+	
+	$("#main2-rightdivitem2").click(function() {
+		alert("서비스 점검중입니다.");
+	})
+	
+	$("#main2-rightdivitem3").click(function() {
+		alert("서비스 점검중입니다.");
+	})
+	
+	$("#main2-rightdivitem4").click(function() {
+		location.href = "tel:" + call;
 	})
 	
 })
