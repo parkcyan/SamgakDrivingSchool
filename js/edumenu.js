@@ -14,5 +14,16 @@ $(document).ready(function() {
 			isEduMenuOpen = false;
 		}
 	})
+	
+	$("#edumenuup").click(function() {
+		if(isEduMenuOpen) {
+			$("#header-edumenu").css("top", "30px");
+			isEduMenuOpen = false;
+		}
+	})
+	
+	$("#edumenuup a").click(function(e) {
+		e.preventDefault();
+	})
 
 });

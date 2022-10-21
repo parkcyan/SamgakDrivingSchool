@@ -31,3 +31,11 @@
 	}	
 	
 }
+
+@media (max-width: 480px) {
+	
+	#expense-container table {
+		height: 20vh;
+	}	
+	
+}

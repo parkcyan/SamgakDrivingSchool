@@ -112,26 +112,37 @@ header ul img {
 
 /* toparticle */
 
-#toparticle {
+.toparticle {
     width: 100%;
-    background-image: url(../images/index2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#top-container {
+#toparticle1 {
+	background-image: url(../images/index.webp);
+}
+
+#toparticle2 {
+	background-image: url(../images/index2.webp);
+}
+
+#toparticle3 {
+	background-image: url(../images/index3.webp);
+}
+
+.toparticle {
 	height: 120px;
 	color: #fff;	
 }
 
-#toparticle p {
+.toparticle p {
 	font-size: 50px;
 	text-align: left;
 	text-shadow: 2px 2px black;
 }
 
-#toparticle p span {
+.toparticle p span {
 	background-color: #000;
 	color: yellow; 
 	text-shadow: 2px 2px white;
@@ -180,7 +191,7 @@ footer img {
 
 @media (max-width: 1024px) {
 	
-	#toparticle p {
+	.toparticle p {
 		font-size: 4vw;
 	}	
 }
@@ -197,7 +208,7 @@ footer img {
 		width: 100%;
 	}
 	
-	#top-container {
+	.toparticle {
 		height: 12vh;	
 	}
 	
@@ -229,11 +240,15 @@ footer img {
 		font-size: 3vw;
 	}
 	
+	header ul img {
+   		width: 3vh;
+	}
+	
 	#header-edumenu {
 		font-size: 3vw;
 	}
 	
-	#toparticle p {
+	.toparticle p {
 		font-size: 6vw;
 	}
 	
